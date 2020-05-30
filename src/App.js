@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import './App.css';
-import 'tachyons'
+import 'tachyons';
+import styles from './App.css'
 
 class App extends Component 
 { constructor(){
   super()
   this.state = {
-    quote :'',
+    quote :'Click Generate',
   }
 }
 
@@ -22,15 +23,14 @@ handleClick = () => {
 render(){
     return (
     <div className="pa5 tc vh-100">
-        <h1> Ron Swanson - The Man, The myth, The Legend </h1>
+        <h1 className="ph0 f6 f1-ns center" > Ron Swanson - The Man, The myth, The Legend </h1>
     <div className="flex items-center">    
       <div className="w-50 pa5 flex flex-column items-center ">
        <img src= 'http://ksassets.timeincuk.net/wp/uploads/sites/55/2016/07/2016_RonSwanson_Press_210716-1-920x610.jpg' alt="Ron Swanson" className= "pv5"/>
-       <button onClick={this.handleClick} className="f6 link dim ph3 pv2 
-        dib white bg-black"> Generate </button> 
+       <button onClick={this.handleClick}> Talk!!</button> 
       </div>
       <div className="w-50 pa5">
-        <h1>{this.state.quote}</h1>
+        <h1 className="ph0 f4 f1-ns measure-narrow center">{this.state.quote}</h1>
       </div>
     </div>
    </div> 
