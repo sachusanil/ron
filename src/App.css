@@ -51,10 +51,3 @@ button:hover {
   }
 }
 
-
-  .ronSays {
-  position: relative;
-  font-family: 'Sanchez', serif;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
-}
